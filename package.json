@@ -1,0 +1,14 @@
+{
+  "name": "help-ia-cenestur",
+  "version": "1.0.0",
+  "description": "Sistema de Help Desk con IA unificado en Vercel",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
+}
