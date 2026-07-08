@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Instituto Cenestur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Help Desk Cenestur</h1>
+            <p>Soporte Técnico impulsado por Inteligencia Artificial</p>
+        </header>
+
+        <!-- Formulario para crear el ticket -->
+        <section class="ticket-form-section">
+            <h2>Crear Nuevo Ticket</h2>
+            <form id="ticketForm">
+                <div class="input-group">
+                    <label for="titulo">Asunto del problema:</label>
+                    <input type="text" id="titulo" placeholder="Ej: Mi impresora no funciona" required>
+                </div>
+                <div class="input-group">
+                    <label for="descripcion">Descripción detallada:</label>
+                    <textarea id="descripcion" rows="4" placeholder="Explica lo que sucede..." required></textarea>
+                </div>
+                <button type="submit" id="submitBtn">
+                    <span id="btnText">Enviar Ticket a la IA ✨</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- Contenedor donde aparecerán los tickets -->
+        <section class="tickets-history">
+            <h2>Historial de Tickets</h2>
+            <div id="ticketsContainer" class="tickets-container">
+                <p class="loading-text">Cargando tickets...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

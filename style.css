@@ -1,0 +1,134 @@
+:root {
+    --primary: #4F46E5;
+    --background: #F3F4F6;
+    --card-bg: #FFFFFF;
+    --text-main: #1F2937;
+    --text-muted: #6B7280;
+    --ai-bg: #EEF2FF;
+    --ai-border: #6366F1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-main);
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 { color: var(--primary); }
+header p { color: var(--text-muted); }
+
+/* Estilos del Formulario */
+.ticket-form-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input, .input-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #4338CA; }
+button:disabled { background-color: #9CA3AF; cursor: not-allowed; }
+
+/* Estilos de las Tarjetas de Tickets */
+.ticket-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge.alta { background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; }
+.badge.media { background: #FEF3C7; color: #D97706; border: 1px solid #FCD34D; }
+.badge.baja { background: #D1FAE5; color: #059669; border: 1px solid #6EE7B7; }
+.badge.categoria { background: #E0E7FF; color: #4F46E5; border: 1px solid #A5B4FC; }
+
+.ticket-desc {
+    background: #F9FAFB;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+.ia-response {
+    background: var(--ai-bg);
+    border-left: 4px solid var(--ai-border);
+    padding: 1rem;
+    border-radius: 4px 8px 8px 4px;
+}
+
+.ia-response h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
