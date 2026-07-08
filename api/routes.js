@@ -13,7 +13,7 @@ router.post('/tickets', async (req, res) => {
     const apiKey = process.env.GEMINI_API_KEY;
     
     // 📡 LLAMADA A GEMINI 1.5 FLASH (IA Real)
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`;
 
     const prompt = `Actúa como un ingeniero de soporte técnico de TI para el Instituto Cenestur.
     Analiza detalladamente el siguiente ticket y responde EXCLUSIVAMENTE con un objeto JSON plano. 
